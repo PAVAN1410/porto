@@ -1,0 +1,150 @@
+{
+    "user_data": {
+        "name": "Rishabh Johri",
+        "address": "Bhopal, Madhya Pradesh, India",
+        "profile_title": [
+            "Student at VIT_Vellore Institute of Technology",
+            " Data science",
+            " AI enthusiast",
+            " competitive coder"
+        ],
+        "image_src": "https://media-exp3.licdn.com/dms/image/C4D35AQHo_ojx--kDkA/profile-framedphoto-shrink_100_100/0/1595647965972?e=1623232800&v=beta&t=H3w0bw8WFBGgpHNDqtGlPdQlx6vLLHTeUETvLsRxXwc"
+    },
+    "Experience": [
+        {
+            "img": "https://media-exp3.licdn.com/dms/image/C560BAQGEwOnImw_WTg/company-logo_100_100/0/1519891346583?e=1631145600&v=beta&t=lITUaV9hCJ982oB4DfUwkuIQf7kGG1qvAwY6CwaLDZ4",
+            "post": "Student",
+            "name": "VIT_Vellore Institute of Technology",
+            "work_duration": "Jun 2019 \u2013 Present"
+        },
+        {
+            "img": "https://media-exp3.licdn.com/dms/image/C560BAQEf-aaanw-wmQ/company-logo_100_100/0/1588010379498?e=1631145600&v=beta&t=rpQXzkIWt7AOGzuZDAkBUx_g6ZopdtYvUmhYGjo8fLY",
+            "post": "Senior Core committee member",
+            "name": "Student Technical Community \u2014 VIT Vellore",
+            "work_duration": "Dec 2019 \u2013 Mar 2021"
+        }
+    ],
+    "Education": {
+        "college": "Vellore Institute of Technology",
+        "degree": "Bachelor of Technology - BTech",
+        "field_of_study": "Computer Science"
+    },
+    "Certifications": [
+        {
+            "name": "Microsoft AI Classroom",
+            "issued_by": "Microsoft"
+        },
+        {
+            "name": "Data Cleaning",
+            "issued_by": "Kaggle"
+        },
+        {
+            "name": "Data Visualization",
+            "issued_by": "Kaggle"
+        },
+        {
+            "name": "Geospatial Analysis",
+            "issued_by": "Kaggle"
+        },
+        {
+            "name": "Intro to Machine learning",
+            "issued_by": "Kaggle"
+        },
+        {
+            "name": "Pandas",
+            "issued_by": "Kaggle"
+        },
+        {
+            "name": "Python",
+            "issued_by": "Kaggle"
+        },
+        {
+            "name": "Java (Basic) Certificate",
+            "issued_by": "HackerRank"
+        },
+        {
+            "name": "JavaScript (Basic) Certificate",
+            "issued_by": "HackerRank"
+        },
+        {
+            "name": "Problem Solving (Basic) Certificate",
+            "issued_by": "HackerRank"
+        },
+        {
+            "name": "Problem Solving (Intermediate) Certificate",
+            "issued_by": "HackerRank"
+        },
+        {
+            "name": "Python (Basic) Certificate",
+            "issued_by": "HackerRank"
+        },
+        {
+            "name": "Rest API (Intermediate) Certificate",
+            "issued_by": "HackerRank"
+        }
+    ],
+    "skills_set": [
+        "Data Science",
+        "Statistical Data Analysis",
+        "Machine Learning",
+        "Big Data",
+        "Data Structures",
+        "Data Analysis",
+        "Deep Learning",
+        "Artificial Intelligence (AI)",
+        "Programming",
+        "Cloud Computing",
+        "Statistics",
+        "Data Visualization",
+        "Node.js",
+        "Deep Neural Networks (DNN)",
+        "Python (Programming Language)",
+        "PySpark",
+        "Flask",
+        "C (Programming Language)",
+        "C++",
+        "R",
+        "MATLAB",
+        "Google Cloud Platform (GCP)",
+        "IBM Cloud",
+        "Java",
+        "Amazon Web Services (AWS)",
+        "Microsoft Azure",
+        "SQL",
+        "JavaScript",
+        "HTML",
+        "Cascading Style Sheets (CSS)",
+        "TensorFlow",
+        "Django",
+        "OpenCV",
+        "Support Vector Machine (SVM)",
+        "Pycharm",
+        "Artificial Neural Networks",
+        "Big Data Analytics"
+    ],
+    "projects": [
+        "Fake Review Detection",
+        "Data Science Assignments",
+        "Find duplicate questions on StackOverflow by their embeddings",
+        "Learn_to_calculate_with_seq2seq_model",
+        "MNIST Digit classification on Cainvas",
+        "Recognize-named-entities-on-Twitter-with-LSTMs",
+        "stack-overflow-assistant-bot",
+        "Handwritten Text recogniser",
+        "IBM_SignalProcessing_ML_IOT_usingWatson",
+        "mushroom classification using Artificial Neural Network",
+        "COVID 19 analysis using data visualisation",
+        "Hand written digits recogniser",
+        "base8 Octary search",
+        "Fake news detector",
+        "chatbot"
+    ],
+    "honors": [
+        "Foundations for Big Data Analysis with SQL (with Honors)",
+        "Programming Foundations with JavaScript, HTML and CSS (with Honors)",
+        "Java Programming: Solving Problems with Software (with Honors)"
+    ],
+    "languages": [],
+    "organizations": [],
+    "publications": []
+}

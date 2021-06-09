@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTO</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%;
+            background-color: #f8f9fa !important;
+            color: #0e6d71;
+            box-shadow: 10px 0px 10px;
+        }
+        
+        .menu {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu li {
+            padding: 20px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: #0e6d71;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fullpage">
+        <header>
+            <div>
+                <h1>PORTO</h1>
+            </div>
+
+            <ul class="menu">
+                <li><a href="/">HOME</a> </li>
+                <li>
+                    <a href="/build_porto">BUILD PORTO</a>
+                </li>
+                <li><a href="/help ">HELP</a></li>
+            </ul>
+
+        </header>
+        <style>
+            .main {
+                /* margin-top: 3rem !important; */
+                width: 100%;
+                margin-right: auto;
+                margin-left: auto;
+                background-color: #f8f9fa;
+            }
+            
+            .container {
+                /* color: bl; */
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                align-items: center;
+                justify-content: space-around;
+                padding: 30px;
+                background-color: #f9f9f9;
+                margin: auto auto 100px auto;
+            }
+            
+            .column {
+                flex-direction: column;
+            }
+            
+            .data {
+                width: 55%;
+            }
+            
+            .data h2 {
+                font-size: 35px;
+                padding: 0 0 40px 0;
+                font-weight: bold;
+            }
+            
+            .data p {
+                font-size: 20px;
+            }
+            
+            .image {
+                width: 30%;
+                margin: 5px;
+            }
+            
+            .image img {
+                width: 100%;
+            }
+            /* .container::after {
+                content: '';
+                height: 100px;
+                width: 100%;
+                background-color: #f9f9f9;
+            }
+             */
+            
+            .maintain_distance {
+                height: 0px;
+                background-color: #f9f9f9;
+                width: 80%;
+                margin: auto;
+            }
+        </style>
+        <div class="main ">
+            <div>
+
+                <!-- first image and data -->
+                <div class="container " style="padding-top: 80px; ">
+                    <div class="data ">
+                        <h2>
+                            Identify, explore and share your <br> observations of portfolio
+                        </h2>
+                        <p style="font-size: 20px;">
+                            A portfolio is a living and changing collection of records that reflect your accomplishments, skills, experiences, and attributes. It highlights and showcases samples of some of your best work, along with life experiences, values and achievements.The
+                            personal information that you incorporate into your portfolio can greatly reflect on your abilities as an individual as well as become a useful tool in marketing yourself to employers, corporations, colleges and universities.
+                        </p>
+                    </div>
+                    <div class="image ">
+                        <img src="https://www.valueresearchonline.com/content-assets/images/49260_20210426-vr-premium__w660__.jpg" alt=" ">
+                    </div>
+                </div>
+
+                <div class="maintain_distance "></div>
+
+
+
+                <div class="maintain_distance "></div>
+
+                <style>
+                    .hor_list {
+                        list-style-type: none;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-around;
+                        margin-bottom: 15px;
+                    }
+                    
+                    .list_item {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        box-shadow: 10px 10px 10px;
+                        height: 350px;
+                        text-align: center;
+                        background-color: white !important;
+                        padding: 10px 10px;
+                        justify-content: space-evenly;
+                        transition: all 1s;
+                        cursor: pointer;
+                    }
+                    
+                    .list_form {
+                        width: 25%;
+                    }
+                    
+                    .list_item:hover,
+                    .usage:hover {
+                        transform: scale(1.05);
+                    }
+                    
+                    .circle {
+                        background-color: #c18303;
+                        width: 100px;
+                        height: 100px;
+                        clip-path: circle(50%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .title {
+                        font-size: 30px;
+                        font-weight: bold;
+                        color: #c18303;
+                    }
+                    
+                    .info {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                </style>
+
+                <!-- Three card list -->
+                <div class="container " style="position: relative; ">
+                    <ul class="hor_list ">
+                        <form class="list_form" action="/download">
+                            <label for="submit">
+                                <li class="list_item ">
+                                    <div class="circle ">
+                                        <img style="width: 50px; "
+                                            src="https://img.icons8.com/metro/52/ffffff/butterfly.png " />
+                                    </div>
+                                    <div class="title ">Download zip
+                                        <hr style="width: 100px; color: black;margin:15px auto 0px auto; ">
+                                    </div>
+                                    <div class="info "> You can download zip of your portfolio and you can host at your
+                                        convinent place
+                                    </div>
+                                </li>
+                            </label>
+                            <input type="submit" value="submit" id="submit" hidden name="submit">
+                        </form>
+                        <form class="list_form" action="/index2">
+                            <label for="submit_index2">
+                                <li class="list_item ">
+                                    <div class="circle ">
+                                        <img style="width: 50px; "
+                                            src="https://img.icons8.com/metro/52/ffffff/butterfly.png " />
+                                    </div>
+                                    <div class="title ">Student Template
+                                        <hr style="width: 100px; color: black;margin:15px auto 0px auto; ">
+                                    </div>
+                                    <div class="info ">This template is designed by considering the aspects of
+                                        Professional workers
+                                    </div>
+                                </li>
+                            </label>
+                            <input type="submit" value="submit" id="submit_index2" hidden name="submit">
+                        </form>
+                        <form class="list_form" action="/index3">
+                            <label for="submit_index3">
+                                <li class="list_item ">
+                                    <div class="circle ">
+                                        <img style="width: 50px; "
+                                            src="https://img.icons8.com/metro/52/ffffff/butterfly.png " />
+                                    </div>
+                                    <div class="title ">Professional Template
+                                        <hr style="width: 100px; color: black;margin:15px auto 0px auto; ">
+                                    </div>
+                                    <div class="info ">This template is designed by considering the aspects of
+                                        Professional workers
+                                    </div>
+                                </li>
+                            </label>
+                            <input type="submit" value="submit" id="submit_index3" hidden name="submit">
+                        </form>
+                        <!-- <form class="list_form" action="/download">
+
+                            <li class="list_item ">
+                                <div class="circle "><img style="width: 50px; " src="https://img.icons8.com/plasticine/100/ffffff/brief.png " /></div>
+                                <div class="title ">Application Instructions
+                                    <hr style="width: 100px; color: black;margin:15px auto 0px auto; ">
+
+                                </div>
+
+                                <div class="info ">Accurate and detailed</div>
+
+                            </li>
+                        </form> -->
+                    </ul>
+                </div>
+
+                <div class="maintain_distance "></div>
+
+                <style>
+                    .usage_container h1 {
+                        margin-bottom: 30px;
+                        font-size: 35px;
+                        font-weight: bold;
+                    }
+                    
+                    .usage_items {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .usage {
+                        box-shadow: 10px 10px 10px;
+                        padding: 30px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        /* align-items: center; */
+                        background-color: white !important;
+                        border-radius: 40px;
+                        transition: all 0.5s;
+                    }
+                    
+                    .usage .circle {
+                        align-self: center;
+                    }
+                    
+                    .usage h1 {
+                        font-size: 40px;
+                    }
+                    
+                    .usage h2 {
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                    
+                    .usage p {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
+                </style>
+
+
+                <!-- About makers -->
+
+                <style>
+                    .about .circle {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    
+                    .list_item_about {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        filter: drop-shadow(10px 10px 10px);
+                        width: 30%;
+                        height: 550px;
+                        text-align: center;
+                        background-color: white !important;
+                        padding: 10px 10px;
+                        justify-content: space-evenly;
+                        transition: all 1s;
+                    }
+                    
+                    .about .info {
+                        font-size: 18px;
+                        font-weight: 500;
+                        padding: 0 3px;
+                    }
+                </style>
+
+                <!-- <div class="container about" style="position: relative; ">
+                    <h1>
+                        About us
+                        <hr style="width: 100px; color: black;margin:15px auto 50px auto; ">
+                    </h1>
+                    <ul class="hor_list ">
+                        <li class="list_item_about ">
+                            <div class="circle ">
+                                <img style="width: 100%; " src="../images/prafful.jpg " />
+                            </div>
+                            <div class="title ">Prafful Mundra
+                                <hr style="width: 100px; color: black;margin:15px auto 0px auto; ">
+                            </div>
+                            <div class="info ">Pursuing B. Tech in CSE from VIT Vellore, skilled in machine learning and data analysis. Having coordinated over 10 large scale events in VIT, I developed leadership qualities. I love to face challenges head-on and learn something
+                                new in the process.</div>
+
+                        </li>
+                        <li class="list_item_about ">
+                            <div class="circle "><img style="width: 50px; " src="https://img.icons8.com/ios-filled/50/ffffff/plant-under-sun.png " /></div>
+                            <div class="title ">Species Recognition
+                                <hr style="width: 100px; color: black;margin:15px auto 0px auto; ">
+
+                            </div>
+                            <div class="info ">Automated diagnosis through deep learning algorithms</div>
+
+                        </li>
+                        <li class="list_item_about ">
+                            <div class="circle "><img style="width: 50px; " src="https://img.icons8.com/plasticine/100/ffffff/brief.png " /></div>
+                            <div class="title ">Application Instructions
+                                <hr style="width: 100px; color: black;margin:15px auto 0px auto; ">
+
+                            </div>
+
+                            <div class="info ">Accurate and detailed</div>
+
+                        </li>
+                    </ul>
+                </div> -->
+
+
+                <style>
+                    .footer {
+                        width: 100%;
+                        background-color: black;
+                        color: white;
+                    }
+                    
+                    .footer h3 {
+                        padding: 25px;
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                </style>
+                <div class="footer ">
+                    <h3>
+                        &copy; All rights reserved @Team PORTO
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

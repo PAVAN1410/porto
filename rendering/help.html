@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%;
+            background-color: #f8f9fa !important;
+            color: #0e6d71;
+            box-shadow: 10px 0px 10px;
+        }
+        
+        .menu {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu li {
+            padding: 20px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: #0e6d71;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+
+    <style>
+        .container {
+            /* color: bl; */
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px;
+            margin: auto;
+        }
+        
+        .column {
+            flex-direction: column;
+        }
+        
+        .circle {
+            background-color: #c18303;
+            width: 100px;
+            height: 100px;
+            clip-path: circle(50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <style>
+        .usage_container h1 {
+            margin-bottom: 30px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .usage_items {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .usage {
+            box-shadow: 10px 10px 10px;
+            padding: 30px 60px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            background-color: white !important;
+            border-radius: 40px;
+            transition: all 0.5s;
+        }
+        
+        .usage .circle {
+            align-self: center;
+        }
+        
+        .usage h1 {
+            font-size: 40px;
+        }
+        
+        .usage h2 {
+            font-size: 35px;
+            text-align: center;
+        }
+        
+        .usage p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>PORTO</h1>
+        </div>
+
+        <ul class="menu">
+            <li><a href="/">HOME</a> </li>
+            <li>
+                <a href="/build_porto">BUILD PORTO</a>
+            </li>
+            <li><a href="/help ">HELP</a></li>
+        </ul>
+
+    </header>
+
+
+    <!-- Usage guide -->
+    <div class="container column usage_container">
+        <h1>Usage</h1>
+        <hr style="width: 20%;  color: black;margin:0 auto 40px auto;">
+
+        <div class="usage_items ">
+            <div class="usage ">
+                <div class="circle ">
+                    <img style="width: 50px; " src="https://img.icons8.com/ios-filled/50/ffffff/growing-plant.png " />
+                </div>
+
+                <h2>PORTO - PortfolioBuilder
+                    <hr style="width: 100px; color: black;margin:15px auto 20px auto; ">
+                </h2>
+                <p>Click BUILD PORTO menu</p>
+                <p>Provide your linkedIn URL</p>
+                <p>Wait for few minutes to get entire data scraped</p>
+                <p>Select template as per your requirement</p>
+                <p>Click on Download zip </p>
+                <p>Take the zip file and host it. </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

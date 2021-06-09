@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PORTO</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/84/e8/47/84e84792bd2f7489443c4bdbc20e182c.png">
+    <style>
+         ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script>
+        function readTextFile(file, callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.overrideMimeType('application/json');
+            rawFile.open('GET', file, true);
+            rawFile.onreadystatechange = function() {
+                if (rawFile.readyState === 4 && rawFile.status == '200') {
+                    callback(rawFile.responseText);
+                }
+            };
+            rawFile.send(null);
+        }
+        //usage:
+        readTextFile("{{ url_for('static',filename='test.json')}}", function(text) {
+            data = JSON.parse(text);
+            user_data = data.user_data
+            education = data.Education
+            experience = data.Experience
+            projects = data.projects
+            skills = data.skills_set
+        });
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/open-iconic-bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css')}}" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/aos.css')}}" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/ionicons.min.css')}}" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/flaticon.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/icomoon.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}" />
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="navname">Imposters!</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home-section" class="nav-link"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-section" class="nav-link"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume-section" class="nav-link"><span>Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services-section" class="nav-link"><span>Experiences</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills-section" class="nav-link"><span>Skills</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home-section" class="hero">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img" style="background-image: url('https://i.pinimg.com/originals/84/e8/47/84e84792bd2f7489443c4bdbc20e182c.png')">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3" id="username"></h1>
+                                <h2 class="mb-4" id="userabout">I am here to showcase all my work and achievements</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 col-lg-5 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="img d-flex align-self-stretch align-items-center" style="background-image: url('https://i.pinimg.com/originals/84/e8/47/84e84792bd2f7489443c4bdbc20e182c.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h1 class="big">About</h1>
+                            <h2 class="mb-4">About Me</h2>
+                            <p id="aabout">
+
+                            </p>
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                                <li class="d-flex">
+                                    <span>Name:</span> <span id='name'></span>
+                                </li>
+                                <li class="d-flex">
+                                    <span>College:</span> <span id='college'>Not Available</span>
+                                </li>
+                                <li class="d-flex">
+                                    <span>Degree:</span>
+                                    <span id='degree'>Not Available</span>
+                                </li>
+                                <li class="d-flex">
+                                    <span>Specialization:</span> <span id='branch'>Not Available</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Projects</h1>
+                    <h2 class="mb-4">Projects</h2>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 column-1">
+
+                </div>
+
+                <div class="col-md-6 column-2">
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="ftco-section" id="services-section">
+        <div class="container">
+            <div class="row justify-content-center py-5 mt-5">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Experiences</h1>
+                    <h2 class="mb-4">Experiences</h2>
+                </div>
+            </div>
+            <div class="row experienceList">
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section" id="skills-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Skills</h1>
+                    <h2 class="mb-4">My Skills</h2>
+                    <p id='disable_it'>
+                        My Skills Are Unknown , Generate to modify !
+                    </p>
+                </div>
+            </div>
+            <div class="row skillset">
+            </div>
+        </div>
+    </section>
+    <footer class="ftco-footer ftco-section" style="padding: 5px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <!-- <p>
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This website was made during IVYHACK 2020 <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="#" target="_blank">team
+                            Imposters.</a>
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg>
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery-migrate-3.0.1.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.easing.1.3.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.stellar.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/aos.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.animateNumber.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/scrollax.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+
+    <script>
+        setTimeout(function() {
+
+            console.log(user_data)
+            console.log(data)
+            document.getElementById('username').innerHTML = `I'm <span>hjh</span>`
+            document.getElementById('name').innerHTML = user_data['name'];
+            document.getElementById('userabout').innerHTML = 'about';
+            document.getElementById('aabout').innerText = user_data['profile_title'][0];
+            document.getElementById('navname').innerHTML = user_data['name'];
+            document.getElementById('college').innerHTML = education['college'];
+            document.getElementById('degree').innerHTML = education['degree'];
+            document.getElementById('branch').innerHTML = education['field_of_study'];
+
+
+            // 
+            var list = [];
+            for (i = 0; i < projects.length; i++) {
+                list.push(projects[i]);
+            }
+            i = 1;
+            list.forEach(function(data_) {
+                var card =
+
+
+                    '<div class="resume-wrap ftco-animate fadeInUp ftco-animated" style="height:150px; overflow-y:scroll;"> ' + '</span><h2 style=" word-break: break-all">' + data_ + '</div>';
+                if (i % 2 == 0)
+                    $('.column-2').append(card);
+                else {
+                    $('.column-1').append(card);
+                }
+                i++;
+            });
+            if (skills.length > 0) {
+                document.getElementById('disable_it').style.visibility = 'hidden'
+            }
+            for (let i = 0; i < skills.length; i++) {
+                var skillCard = '<div class="col-md-6 animate-box"><div class="progress-wrap ftco-animate fadeInUp ftco-animated"><h3 style="color:#407BFF">' + skills[i] + '</h3></div></div>';
+                $('.skillset').append(skillCard);
+            }
+            console.log(experience)
+            for (let i = 0; i < experience.length; i++) {
+                var experienceCard = ' <div class="col-md-4 text-center d-flex ftco-animate fadeInUp ftco-animated"><a href="#" class="services-1"><img style="margin-bottom:30px" src="' + experience[i]["img"] + '" alt=""><div class="desc"><h3 class="mb-5" style="font-size:16px;height:40px">' + experience[i]['post'] + '</h3><h4>' + experience[i]['name'] + '</h4>' + experience[i]['work_duration'] + '</div></a></div>';
+                $('.experienceList').append(experienceCard);
+            }
+
+
+
+        }, 2000);
+    </script>
+
+    <script>
+    </script>
+</body>
+
+</html>
